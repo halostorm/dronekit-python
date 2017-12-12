@@ -37,10 +37,11 @@ print "\nChannel overrides: %s" % vehicle.channels.overrides
 time.sleep(5)
 print "Try to change!"
 # set1-8 as 110 -810
-print "Set Ch1-Ch8 overrides to 110-810 respectively"
-vehicle.channels.overrides = {'1':800, '2':800,'3': 800,'4':800, '5':810,'6':610,'7':710,'8':810}
-print " Channel overrides: %s" % vehicle.channels.overrides 
-
+while True:
+	print "Set Ch1-Ch8 overrides to 110-810 respectively"
+	vehicle.channels.overrides = {'1':2000, '2':2000,'3': 2000,'4':2000, '5':810,'6':610,'7':710,'8':810}
+	print " Channel overrides: %s" % vehicle.channels.overrides 
+	time.sleep(1/50.0)
 time.sleep(5)
 print "Try to clear!"
 # clear
