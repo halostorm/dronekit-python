@@ -5,7 +5,7 @@ from dronekit import connect
 #connect to vehicle
 #sitl = dronekit_sitl.start_default()
 #connection_string = sitl.connection_string()
-connection_string= '/dev/ttyACM0'
+connection_string= '/dev/ttyACM5'
 vehicle = connect(connection_string, wait_ready=True)
 
 print "Read channels individually:"
